@@ -1,0 +1,160 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: soorme_info
+  examples: |
+    - what is soorme?
+    - what do you do?
+    - what is this place?
+    - what do you sell?
+    - what is happening here?
+
+- intent: return_policy
+  examples: |
+    - how can i return a product?
+    - i received wrong product.
+    - i received defected product.
+    - what is the return or replace policy?
+    - what is your return policy?
+    - can I return or exchange a product?
+    - what if I'm not satisfied with my purchase?
+
+- intent: order_information
+  examples: |
+    - how can I place an order?
+    - what is the process to order clothes?
+    - can you guide me through the ordering process?
+    - how do I buy clothes from Soorme?
+
+- intent: customer_support
+  examples: |
+    - I have a problem with my order
+    - I need assistance with a product
+    - I have a question about your services
+    - How can I contact your customer support?
+    - I want to talk to you.
+    - i wish to contact you.
+
+- intent: browse_collection
+  examples: |
+    - Show me your collection
+    - What clothing options do you have?
+    - Can I see the available designs?
+    - Browse clothes
+
+- intent: size_guide
+  examples: |
+    - How do I find the right size?
+    - Can you help me with sizing information?
+    - What size should I choose?
+    - Where can I find the size guide?
+
+- intent: promotions
+  examples: |
+    - Are there any ongoing promotions?
+    - Do you have any discounts or offers?
+    - Can I get a discount on my purchase?
+    - Tell me about your current deals
+
+- intent: shipping_information
+  examples: |
+    - How long does shipping take?
+    - What are the shipping options?
+    - Do you provide international shipping?
+    - Can I track my order?
+
+- intent: payment_methods
+  examples: |
+    - What payment methods do you accept?
+    - Can I pay with PayPal?
+    - Are credit cards accepted?
+    - How can I complete the payment?

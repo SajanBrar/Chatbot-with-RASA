@@ -1,0 +1,71 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - soorme_info
+  - return_policy
+  - order_information
+  - customer_support
+  - browse_collection
+  - size_guide
+  - promotions
+  - shipping_information
+  - payment_methods
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_soorme_info:
+  - text: "We at Soorme sell clothing based on the heritage and culture of Punjab. Our collection includes a wide range of traditional Punjabi attire, including phulkari suits, turbans, and accessories."
+
+  utter_return_policy:
+  - text: "We have a flexible return and exchange policy. If you're not completely satisfied with your purchase, you can return or exchange the product within 30 days of receiving it. Please visit our website's 'Returns and Exchanges' page for more detailed information."
+
+  utter_order_information:
+  - text: "To place an order at Soorme, simply browse through our collection on our website. Once you've found the items you like, add them to your cart and proceed to checkout. You'll need to provide your shipping and payment details to complete the order."
+
+  utter_customer_support:
+  - text: "Our customer support team is here to help! Please provide us with more details about your issue, and we'll do our best to assist you. You can also reach out to our support team by emailing support@soorme.com or by calling our helpline at +1-XXX-XXX-XXXX."
+
+  utter_browse_collection:
+  - text: "Sure! We have a diverse collection of Punjabi clothing. You can explore our range of phulkari suits, kurta pajamas, Punjabi juttis, and more. Feel free to visit our website and browse through our stunning designs."
+
+  utter_size_guide:
+  - text: "Finding the perfect size is important. We provide a comprehensive size guide on our website that offers detailed measurements for each clothing item. You can find the size guide on the product page or in the 'Size Chart' section. If you need further assistance, feel free to ask!" 
+
+  utter_promotions:
+  - text: "Yes, we frequently run promotions and offer special discounts to our customers. To stay updated with our latest deals, subscribe to our newsletter or follow us on social media. You can also check our website's 'Promotions' section for any ongoing offers."
+
+  utter_shipping_information:
+  - text: "Our shipping time varies depending on your location. Generally, it takes 3-7 business days for domestic orders. We also offer international shipping, with delivery times ranging from 7-14 business days. You'll receive a tracking number once your order is shipped, allowing you to track its progress."
+
+  utter_payment_methods:
+  - text: "We accept various payment methods, including major credit cards like Visa, Mastercard, and American Express. We also offer secure payment options like PayPal. At checkout, you'll be prompted to choose your preferred payment method and complete the transaction."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

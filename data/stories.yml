@@ -1,0 +1,75 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: soorme path
+  steps:
+  - intent: soorme_info
+  - action: utter_soorme_info
+  
+- story: return policy path  
+  steps:
+  - intent: return_policy
+  - action: utter_return_policy
+  
+- story: order info path  
+  steps:
+  - intent: order_information
+  - action: utter_order_information
+  
+- story: customer support path
+  steps:
+  - intent: customer_support
+  - action: utter_customer_support
+
+- story: browse collection path
+  steps:
+  - intent: browse_collection
+  - action: utter_browse_collection
+
+- story: size guide path
+  steps:
+  - intent: size_guide
+  - action: utter_size_guide
+
+- story: promotions path
+  steps:
+  - intent: promotions
+  - action: utter_promotions
+
+- story: shipping information path
+  steps:
+  - intent: shipping_information
+  - action: utter_shipping_information
+
+- story: payment methods path
+  steps:
+  - intent: payment_methods
+  - action: utter_payment_methods
